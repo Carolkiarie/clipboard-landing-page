@@ -58,23 +58,31 @@
     font-size: 1rem;
   }
 
-  .header{
+    .header{
     position: relative;
     margin: 0px;
-    
+    object-fit: contain;  
   }
+  
+  .header img{
+     width: 100%;
+    object-fit: contain;
+  }
+  
+  
   .logo{
-    position: absolute;
-    top: 5em;
-    left: 7em;
+     position: absolute;
+    top: 16rem;
+    left: 13rem; 
+    
 
   }
-  .logo img{
-    object-fit: contain;
-    height: 6rem;
+   .logo img{
+     object-fit: contain;
+    height: 6rem;  
   }
   section.content2{
-    margin-bottom: 8rem;
+    margin-bottom: 5rem;
     
 
   }
@@ -102,7 +110,7 @@
     box-shadow: 0px 5px 12px -3px var(--light-Blue)
   }
 section.content3{
-    margin-bottom: 8rem;
+    margin-bottom: 5rem;
 }
   
   .computer1{
@@ -121,7 +129,7 @@ section.content3{
 }
 
 section.content4{
-    margin-bottom: 8rem;
+    margin-bottom: 5rem;
 }
 .content4 .ph1{
     text-align: center;
@@ -191,9 +199,9 @@ footer{
 color: var(--strong-cyan);
 }
 footer ul{
-    margin: 0; 
+    margin: 0px; 
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
 }
 .icons{
     display: flex;
@@ -201,7 +209,187 @@ footer ul{
     justify-content: center;
     width: 100%;
     gap: 30px;
+    padding: 0px;
+    
 }
 .icons img:hover{
     background-color: var(--strong-cyan);
 }
+
+
+/* --media query */
+
+@media screen and (min-width:650px){
+     .header{
+    content: url(images/bg-header-desktop.png);
+     }
+    .logo{
+           top: 8rem;
+           left: 19rem; 
+    }
+}
+@media screen and (min-width:760px){
+    .logo{
+        left: 24rem;
+    }
+    section{
+        margin: 0rem;
+    }
+    .buttons{
+        display:flex;
+        
+        gap: 10px;
+        justify-content: center;
+
+
+    }
+    .buttons .ios{
+        background-color: var(--strong-cyan);
+        padding: 10px 0px;
+        border:none;
+        margin: 1.5rem 0rem;
+        flex-basis: 15rem;
+        box-shadow: 0px 5px 12px -3px var(--strong-cyan)
+      }
+    
+      .buttons .mac{
+        background-color: var(--light-Blue);
+        padding: 10px;
+        border:none;
+        flex-basis: 15rem;
+        margin: 1.5rem 0rem;
+      }
+
+section.content2{
+    margin:0rem 10rem 4rem 10rem;
+
+}
+
+
+section.content3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 3rem;
+    margin-bottom: 0rem;
+
+}
+
+.content3 .ph1{
+grid-column: 1/4;
+grid-row: 1/2;
+margin: 0rem 10rem;
+}
+  .computer1{
+    transform: translateX(-20px);
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+.list{
+    grid-column: 2/4;
+    grid-row: 2/4;
+    text-align: start;
+    margin:0rem 10rem 0rem 0rem;
+}
+.list h1{
+    font-size: 1.1rem;
+}
+
+section.content4{
+    margin:0rem 10rem 7rem 10rem;
+}
+.content5 .ph1{
+    margin:0rem 10rem 0rem 10rem;;
+}
+.container{
+    display: flex;
+    flex-grow: 1;
+    gap: 10px;
+    margin:0rem 7rem; 
+}
+ 
+aside.companies{
+    display: flex;
+    margin:0rem 7rem;
+    margin-bottom: 6rem;
+    gap: 4rem;
+    justify-content: space-around;
+}
+.companies img{
+    object-fit: contain;
+    height: 1.5rem;
+}
+
+footer{
+      display: flex;  
+     flex-direction: row;
+     padding: 30px; 
+     gap: 5rem;
+     align-items: center;
+     box-sizing: border-box;
+    
+    
+
+}
+
+
+
+.image2{
+        object-fit: contain;
+        height: 8rem;
+        margin: 0px;
+        padding: 0px;
+}
+
+.unlist{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0px;
+    gap: 2rem;
+}
+
+.unlist .privacy{
+    grid-column: 2/3;
+}
+.unlist .install{
+    grid-column: 3/4;
+}
+.unlist .contact{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.unlist .press{
+    grid-column:2/3;
+    grid-row: 2/3;
+}
+.icons img{
+    height: 1.2rem;
+}
+}
+
+ 
+
+@media screen and (min-width:1050px){
+    .logo{
+        left: 38rem;
+     }
+    
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
