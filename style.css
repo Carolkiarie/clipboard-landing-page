@@ -72,7 +72,7 @@
   
   .logo{
      position: absolute;
-    top: 10rem;
+    top: 7rem;
     left: 10rem; 
     
 
@@ -225,8 +225,10 @@ footer ul{
     max-width: 100%;
      }
     .logo{
-           top: 8rem;
-           left: 14rem; 
+           top: 4rem;
+           left: 14rem;
+           
+           
     }
 }
 @media screen and (min-width:760px){
@@ -375,7 +377,9 @@ footer{
 
 @media screen and (min-width:1050px){
     .logo{
+      top: 6rem;
         left: 38rem;
+        
      }
     
 
