@@ -62,17 +62,18 @@
     position: relative;
     margin: 0px;
     object-fit: contain;  
+    max-width: 100%;
   }
   
   .header img{
-     width: 100%;
     object-fit: contain;
+    width: 100%;
   }
   
   
   .logo{
      position: absolute;
-    top: 7rem;
+    top: 10rem;
     left: 10rem; 
     
 
@@ -218,6 +219,12 @@ footer ul{
 
 
 /* --media query */
+@media screen and (min-width:550px){
+   .logo{
+    top: 16rem;
+    left: 16rem;
+  } 
+}
 
 @media screen and (min-width:650px){
      .header{
@@ -226,7 +233,7 @@ footer ul{
      }
     .logo{
            top: 4rem;
-           left: 14rem;
+           left: 20rem;
            
            
     }
@@ -378,11 +385,13 @@ footer{
 @media screen and (min-width:1050px){
     .logo{
       top: 6rem;
-        left: 38rem;
+        left: 37rem;
         
      }
     
-
+.header{
+  width: 100%;
+}
 
     }
 
