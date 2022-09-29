@@ -225,9 +225,8 @@ footer ul{
     max-width: 100%;
      }
     .logo{
-           top: 2rem;
-           left: 10rem; 
-    
+           top: 8rem;
+           left: 14rem; 
     }
 }
 @media screen and (min-width:760px){
