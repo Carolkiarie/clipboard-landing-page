@@ -19,7 +19,7 @@
   input, button, textarea, select {
     font: inherit;
   }
-  p, h1, h2, h3, h4, h5, h6 {
+  p, h1, h2 {
     overflow-wrap: break-word;
   }
 
@@ -222,9 +222,10 @@ footer ul{
 @media screen and (min-width:650px){
      .header{
     content: url(images/bg-header-desktop.png);
+    max-width: 100%;
      }
     .logo{
-           top: 8rem;
+           top: 3rem;
            left: 19rem; 
     }
 }
